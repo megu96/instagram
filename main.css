@@ -69,7 +69,7 @@ body {
   font-size: 12px;
   color: #444;
   margin: 0;
-  max-width: 500px;
+  width: 500px;
   margin: 0 auto;
 }
 
@@ -151,7 +151,6 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  position: relative;
 }
 
 .prolile-info__wrap {
@@ -176,6 +175,7 @@ body {
 
 .prolile-info .cate-wrap {
   padding-bottom: 10px;
+  position: relative;
 }
 
 .prolile-info .cate {
@@ -191,14 +191,20 @@ body {
   display: none;
   width: 100%;
   position: absolute;
-  top: 82px;
-  left: 25px;
+  top: 30px;
+  left: 35px;
   z-index: 99;
 }
 
+@media screen and (max-width: 500px) {
+  .cate-menu {
+    top: 28px;
+    left: 25px;
+  }
+}
+
 .cate-menu ul {
-  width: 100%;
-  max-width: 173px;
+  width: 245.69px;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,6 +222,12 @@ body {
   padding: 15px 0;
   border: 1px solid silver;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .cate-menu ul {
+    width: 173px;
+  }
 }
 
 .cate-menu li {

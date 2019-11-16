@@ -5,7 +5,7 @@ body {
     font-size: 12px;
     color: #444;
     margin: 0;
-    max-width: 500px;
+    width: 500px;
     margin: 0 auto;
 }
 
@@ -65,7 +65,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    position: relative;
+    // position: relative;
     &__wrap {
         width: 100%;
         display: flex;
@@ -81,6 +81,7 @@ body {
     }
     .cate-wrap {
         padding-bottom: 10px;
+        position: relative;
     }
     .cate {
         display: inline-block;
@@ -96,12 +97,18 @@ body {
     display: none;
     width: 100%;
     position: absolute;
-    top: 82px;
-    left: 25px;
+    top: 30px;
+    left: 35px;
+    @include sp {
+        top: 28px;
+        left: 25px;
+    }
     z-index: 99;
     ul {
-    width: 100%;
-    max-width: 173px;
+        width: 245.69px;
+    @include sp {
+        width: 173px;     
+    }
     background-color: #fff;
     display: flex;
     justify-content: space-between;
