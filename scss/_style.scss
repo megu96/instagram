@@ -5,14 +5,14 @@ body {
     font-size: 12px;
     color: #444;
     margin: 0;
-    width: 500px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
 .container {
     width: 100%;
     @include sp {
-        width: 350px;
+        max-width: 350px;
         margin: 0 auto;
     }
 }
@@ -62,10 +62,10 @@ body {
 .prolile-info {
     width: 70%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    // position: relative;
+    margin-top: 6%;
+    @include sp {
+        margin-top: 4%;
+    }
     &__wrap {
         width: 100%;
         display: flex;
@@ -80,8 +80,11 @@ body {
         letter-spacing: 0.8px;
     }
     .cate-wrap {
-        padding-bottom: 10px;
         position: relative;
+        margin-top: 10px;
+        @include sp {
+            margin-top: 8px;
+        }
     }
     .cate {
         display: inline-block;
