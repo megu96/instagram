@@ -1,0 +1,71 @@
+.prolile-content {
+    margin: 2px auto 0;
+    width: 100%;
+    padding: 10px 5% 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prolile__pic-content {
+    max-width: 15%;
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+}
+
+.prolile-info-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-title {
+    font-weight: bold;
+}
+
+.ham {
+    width: 2px;
+    height: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    span {
+            display: block;
+            background-color: #444;
+            width: 100%;
+            height: 2px;
+        
+    }
+}
+
+.text-area {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 15px 5%;
+}
+
+.maintext {
+    width: 100%;
+    padding: 9px 3%;
+    font-size: 12px
+}
+
+.content-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 14px;
+    .fa-heart {
+        color: #bb514d;
+    }
+}
+
+.fa-comment {
+    margin: 0 5px;
+}
+
